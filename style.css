@@ -1,0 +1,82 @@
+/* Basic styling for the page */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #e0f0ff; /* Light blue background */
+}
+
+/* Container for the upload section */
+.upload-container {
+  text-align: center;
+  background-color: #003366; /* Dark blue background */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 300px;
+}
+
+/* Header styling */
+h1 {
+  color: #ffffff; /* White text */
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* File input button styling */
+input[type="file"] {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(
+    135deg,
+    #00509e,
+    #007acc
+  ); /* Gradient background */
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold; /* Bold text */
+  text-align: center; /* Center the text */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transition for hover effects */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* File input button hover effect */
+input[type="file"]:hover {
+  background: linear-gradient(
+    135deg,
+    #007acc,
+    #0099ff
+  ); /* Lighter gradient on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* File input button active effect */
+input[type="file"]:active {
+  transform: translateY(0); /* Return to original position on click */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Slightly reduced shadow when active */
+}
+
+/* Feedback message area styling */
+#message {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+/* Success and error message colors */
+.success {
+  color: #00ffcc; /* Light teal for success message */
+}
+
+.error {
+  color: #ff6666; /* Light red for error message */
+}
